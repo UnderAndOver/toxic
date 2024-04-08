@@ -7,7 +7,7 @@ from transformers import BertTokenizer, BertForSequenceClassification
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Model Setup (Loading model from your output directory)
-model_name = "output_dir/model"
+model_name = "output_dir/models"
 
 
 @st.cache_resource  # Caching to avoid reloading on every interaction
